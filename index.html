@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Project 78</title>
+    </head>
+    <body>
+        <center>
+            <h1>My family book</h1>
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="familybook">
+            <h4 id="family"></h4>
+            <button id="v1" onclick="change()">next</button>
+        </center>
+        <script>
+            var images = ["https://i.postimg.cc/MKdhy06Z/family.jpg",
+             
+            "https://i.postimg.cc/wjMnFtMX/father.jpg" ,
+             "https://i.postimg.cc/5ymDKL83/bro.jpg",
+             "https://i.postimg.cc/JnL6wtrd/sister.jpg",
+              "https://i.postimg.cc/bw5W5zSK/mother.jpg"];
+              var names = ["Fmaily Book","Dad", "Orion", "Cadence", "Mom",];
+              var i= 0;
+              function change(){
+                  i++;
+                  var a= 4
+                  if(i > a ) { i = 0; }
+                  var updatedImage = images[i]; 
+                  var updatedName = names[i];
+                  document.getElementById("familybook").src=updatedImage;
+                  document.getElementById("family").innerHTML=updatedName;};
+        </script>
+    </body>
+</html>
